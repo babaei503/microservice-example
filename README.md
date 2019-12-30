@@ -1,7 +1,10 @@
 # Spring Boot Microservices using Feign, Ribbon, Eureka
-1- Uconvert Microsevice
-2- UnitConversion Microservice
-3- Eureka Naming Server
+
+```
+1. Uconvert Microsevice
+2. UnitConversion Microservice
+3. Eureka Naming Server
+```
 
 ## Uconvert Microsevice:
 
@@ -11,6 +14,7 @@ An example request and response is shown below:
 
 GET to http://localhost:8000/unit-convert/from/M/to/FT
 
+```
 {
 	"id":10004,
 	"from":"CM",
@@ -18,6 +22,7 @@ GET to http://localhost:8000/unit-convert/from/M/to/FT
 	"conversionMultiple":0.01,
 	"port":8000
 }
+```
 
 The request above is the unit convert value for CM to M. In the response, conversionMultiple is 0.01.
 
@@ -30,6 +35,7 @@ An example request and response is shown below:
 
 GET to http://localhost:8100/unit-converter-feign/from/M/to/FT/quantity/5
 
+```
 {
 	"id":10001,
 	"from":"M",
@@ -39,6 +45,7 @@ GET to http://localhost:8100/unit-converter-feign/from/M/to/FT/quantity/5
 	"totalCalculatedAmount":16.40,
 	"port":8000
 }
+```
 
 The request above is to find the value of 5 M in FT. The totalCalculatedAmount is 16.40 FT.
 
