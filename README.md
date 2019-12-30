@@ -12,7 +12,7 @@ Uconvert Service is the Service Provider. It provides unit convert values for va
 
 An example request and response is shown below:
 
-GET to http://localhost:8000/unit-convert/from/M/to/FT
+GET to http://localhost:8000/unit-convert/from/CM/to/M
 
 ```
 {
