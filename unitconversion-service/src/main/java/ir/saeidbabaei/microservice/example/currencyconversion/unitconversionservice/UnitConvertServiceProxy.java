@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 @FeignClient(name="uconvert-service")
-@RibbonClient(name="forex-service")
+@RibbonClient(name="uconvert-service")
 public interface UnitConvertServiceProxy {
 	
   @GetMapping("/unit-convert/from/{from}/to/{to}")
